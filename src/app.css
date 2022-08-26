@@ -1,0 +1,65 @@
+html,#root{
+height: 100vh;
+font-family: Arial;
+padding: 0;
+margin: 0;
+background-color: #1E1E1E;
+color: white;
+align-items: center;
+align-content: center;
+text-align: center;
+}
+table,tbody{
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 100%;
+}
+aside td{
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+header{
+    background-color: #000000;
+    z-index: 5;
+    display: block;
+    height: 14vh;
+    position: fixed;
+    width:100%;
+}
+#setting{
+    font-size:36px;
+    float: right;
+    line-height: 190%;
+    margin-right: 10%;
+    cursor: pointer;
+}
+h1{
+    display: inline-block;
+}
+section{
+    display: none;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: black;
+    margin-top: 14vh;
+}
+aside{
+    padding-top:15vh
+}
+header table button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-collapse: separate;
+}
+header td{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
