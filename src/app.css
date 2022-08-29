@@ -14,7 +14,7 @@ table,tbody{
     margin-right: auto;
     line-height: 100%;
 }
-aside td{
+#timetable td{
     padding-left: 0.8vw;
     padding-right: 0.8vw;
     padding-top: 0;
@@ -46,7 +46,7 @@ section{
     background-color: black;
     margin-top: 10vh;
 }
-aside{
+#timetable{
     padding-top:15vh
 }
 header table button{
@@ -61,7 +61,6 @@ header td{
     padding-top: 0;
     padding-bottom: 0;
 }
-
-header table{
-    width: 100%;
+#timetable .grey{
+    color: darkgrey;
 }
