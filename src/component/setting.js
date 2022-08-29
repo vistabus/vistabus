@@ -12,7 +12,7 @@ export default function Setting(){
 })
 return (<section>
 <div className='twotoggles'> Visibility 
-      <div>Public</div>
+      <div>Public</div> 
       <div>Private</div>
   </div>
 
