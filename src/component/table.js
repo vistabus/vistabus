@@ -1,6 +1,7 @@
 import * as DOMPurify from 'dompurify';
 import { useState } from "react";
 import React from 'react';
+import $ from 'jquery'
 
 export default function Table(){
 const [current,set]=useState();
@@ -22,7 +23,11 @@ row.appendChild(cell);
 tableBody.appendChild(row);
 });
 tablestr.appendChild(tableBody);
+$(tablestr).find('tr:first-child td').each(function(){
+    $(this).replaceWith('<th>'+$(this).text()+'</th>');
+   });
+
 set( tablestr.outerHTML)
 })
-return (<aside dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(current)}} /> )
+return (<div id='timetable' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(current)}} /> )
 }
