@@ -65,7 +65,7 @@ if($(this).html().length==4) temp='0'+$(this).html()
 if(temp<university) {$(this).addClass('grey')}
 })
 }
-
+//new
 },1000)//setinterval
 
 }
