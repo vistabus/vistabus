@@ -6,11 +6,14 @@ import $ from 'jquery'
 export default function Table(){
 const [current,set]=useState();
 fetch('NEWschedule.csv').then(response=>response.text()).then(data=>{
-var result=data.split('\r\n')
-result.forEach(function (element, index) {
-result[index] = element.split(",")
+tabling(data)
 })
-result.pop()
+function tabling(data){
+var result=data.split('\n');
+result.forEach(function (element, index) {
+result[index]=element.split(",");
+})
+result.pop();
 var tablestr = document.createElement('table');
 var tableBody = document.createElement('tbody');
 result.forEach(function(rowData) {
@@ -28,6 +31,8 @@ $(tablestr).find('tr:first-child td').each(function(){
    });
 
 set( tablestr.outerHTML)
-})
+
+}
+
 return (<div id='timetable' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(current)}} /> )
 }
