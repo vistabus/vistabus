@@ -44,7 +44,7 @@ header{
 h1{
     display: inline-block;
 }
-section,#nextdiv{
+#settingdiv,#nextdiv{
     display: none;
     z-index: 2;
     height: 100%;
@@ -53,6 +53,8 @@ section,#nextdiv{
     position: fixed;
     background-color: black;
     margin-top: 10vh;
+    white-space: nowrap;
+
 }
 #timetable{
     padding-top:15vh
@@ -73,16 +75,11 @@ aside{
     margin: 5%;
     align-items: center;
     vertical-align: middle;
+    border-radius:10px;
+    padding: 9%;
+    padding-left: 8%;
 }
-a{
-    float: left;
-    padding-left: 5%;
-}
-span{
-    float: right;
-    padding-right: 5%;
 
-}
 #dia{
     background-color: #f7f8d3;
     border-color: #2b2c07;
@@ -96,9 +93,17 @@ span{
     border-color: #55245b;
 }
 
-h2{
-    margin-left: 50%;
+h2,h3{
+    margin-top: 0;
+    margin-bottom: -10px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 h3{
-    margin-right: 50%;
+    margin-bottom: -5px;
+
+}
+
+#nextdiv tr td{
+    width: 40%;
 }
