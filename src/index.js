@@ -10,6 +10,7 @@ import Clock from './component/clock'
 import Highlight from './component/highlight'
 import Next from './component/next'
 import Setting from './component/setting'
+
 Highlight()
 const root = createRoot($('#root')[0]);
 root.render(
@@ -17,6 +18,7 @@ root.render(
 <Next />
 <Setting />
 <header><table><tbody><tr><td><button id='next'>ⓘ</button></td>
+
     <td><Clock /></td>
     <td><button id='setting'>⚙</button></td></tr></tbody></table></header>
 <Table />

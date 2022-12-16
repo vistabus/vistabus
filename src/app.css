@@ -26,7 +26,6 @@ header{
     display: block;
     position: fixed;
     width:100%;
-    height: 10vh;
 }
 #setting,#next{
     font-size:36px;
